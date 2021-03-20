@@ -20,6 +20,7 @@ public class Main extends Application {
     public void start(Stage primaryStage) throws Exception{
         Parent root = FXMLLoader.load(getClass().getResource("sample.fxml"));
         Parent test = FXMLLoader.load(getClass().getResource("Test.fxml"));
+        Parent test = FXMLLoader.load(getClass().getResource("ajout.fxml"));
         primaryStage.setTitle("Liste des étudiants de Gphy");
 
 
