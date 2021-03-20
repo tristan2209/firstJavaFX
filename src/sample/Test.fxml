@@ -43,32 +43,24 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-<VBox prefHeight="400.0" prefWidth="640.0" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1">
+<VBox prefHeight="400.0" prefWidth="640.0" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
   <children>
     <MenuBar prefHeight="19.0" prefWidth="640.0" VBox.vgrow="NEVER">
       <menus>
-        <Menu mnemonicParsing="false" text="Ajout" id="Ajout">
-
+        <Menu fx:id="Ajout" mnemonicParsing="false" onAction="#AjoutPressed" text="Ajout">
+            <MenuItem mnemonicParsing="false" text="Ajouter un eleve" />
         </Menu>
-        <Menu mnemonicParsing="false" text="Affichage" id="affichage">
+        <Menu fx:id="Affichage" mnemonicParsing="false" onAction="#AffichagePressed" text="Affichage">
           <items>
-            <MenuItem mnemonicParsing="false" text="Undo" />
-            <MenuItem mnemonicParsing="false" text="Redo" />
-            <SeparatorMenuItem mnemonicParsing="false" />
-            <MenuItem mnemonicParsing="false" text="Cut" />
-            <MenuItem mnemonicParsing="false" text="Copy" />
-            <MenuItem mnemonicParsing="false" text="Paste" />
-            <MenuItem mnemonicParsing="false" text="Delete" />
-            <SeparatorMenuItem mnemonicParsing="false" />
-            <MenuItem mnemonicParsing="false" text="Select All" />
-            <MenuItem mnemonicParsing="false" text="Unselect All" />
+            <MenuItem mnemonicParsing="false" text="Afficher les eleves" />
+
           </items>
         </Menu>
       </menus>
     </MenuBar>
     <AnchorPane maxHeight="-1.0" maxWidth="-1.0" prefHeight="300.0" prefWidth="600.0" VBox.vgrow="ALWAYS">
       <children>
-        <Label alignment="CENTER"  layoutX="71.0" layoutY="85.0" prefHeight="168.0" prefWidth="498.0" style="&#10;" text="Bienvenue sur notre gestion des éléves de Génie Physiologique, Biotechnologique et Informatique " textFill="#6fa7b9" wrapText="true">
+        <Label alignment="CENTER" layoutX="71.0" layoutY="85.0" prefHeight="168.0" prefWidth="498.0" style="&#10;" text="Bienvenue sur notre gestion des éléves de Génie Physiologique, Biotechnologique et Informatique " textFill="#6fa7b9" wrapText="true">
           <font>
             <Font size="23.0" />
           </font>
@@ -86,5 +78,4 @@
       </children>
     </AnchorPane>
   </children>
-
 </VBox>
