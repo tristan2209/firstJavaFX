@@ -23,9 +23,11 @@ public class Main extends Application {
         Parent Affichage = FXMLLoader.load(getClass().getResource("Affichage.fxml"));
         primaryStage.setTitle("Liste des étudiants de Gphy");
 
-        primaryStage.setScene(new Scene(Acceuil, 300, 275));
-        primaryStage.setScene(new Scene(Ajout, 300, 275));
+
         primaryStage.setScene(new Scene(Affichage, 300, 275));
+        primaryStage.setScene(new Scene(Ajout, 300, 275));
+        primaryStage.setScene(new Scene(Acceuil, 300, 275));
+
 
         primaryStage.show();
     }
