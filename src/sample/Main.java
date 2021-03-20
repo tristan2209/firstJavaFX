@@ -22,7 +22,9 @@ public class Main extends Application {
         Parent test = FXMLLoader.load(getClass().getResource("Test.fxml"));
         primaryStage.setTitle("Liste des étudiants de Gphy");
 
-        primaryStage.setScene(new Scene(test, 300, 275));
+
+
+        primaryStage.setScene(new Scene(test));
 
         primaryStage.show();
     }

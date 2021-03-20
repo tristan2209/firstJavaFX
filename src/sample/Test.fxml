@@ -43,30 +43,14 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-<?import javafx.scene.text.Text?>
-
-
 <VBox prefHeight="400.0" prefWidth="640.0" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1">
   <children>
-    <MenuBar prefHeight="0.0" prefWidth="575.0" VBox.vgrow="NEVER">
+    <MenuBar prefHeight="19.0" prefWidth="640.0" VBox.vgrow="NEVER">
       <menus>
-        <Menu mnemonicParsing="false" text="Ajout">
-          <items>
-            <MenuItem mnemonicParsing="false" text="New" />
-            <MenuItem mnemonicParsing="false" text="Open…" />
-            <Menu mnemonicParsing="false" text="Open Recent" />
-            <SeparatorMenuItem mnemonicParsing="false" />
-            <MenuItem mnemonicParsing="false" text="Close" />
-            <MenuItem mnemonicParsing="false" text="Save" />
-            <MenuItem mnemonicParsing="false" text="Save As…" />
-            <MenuItem mnemonicParsing="false" text="Revert" />
-            <SeparatorMenuItem mnemonicParsing="false" />
-            <MenuItem mnemonicParsing="false" text="Preferences…" />
-            <SeparatorMenuItem mnemonicParsing="false" />
-            <MenuItem mnemonicParsing="false" text="Quit" />
-          </items>
+        <Menu mnemonicParsing="false" text="Ajout" id="Ajout">
+
         </Menu>
-        <Menu mnemonicParsing="false" text="Affichage">
+        <Menu mnemonicParsing="false" text="Affichage" id="affichage">
           <items>
             <MenuItem mnemonicParsing="false" text="Undo" />
             <MenuItem mnemonicParsing="false" text="Redo" />
@@ -82,12 +66,11 @@
         </Menu>
       </menus>
     </MenuBar>
-    <AnchorPane maxHeight="-1.0" maxWidth="-1.0" prefHeight="-1.0" prefWidth="-1.0" VBox.vgrow="ALWAYS">
+    <AnchorPane maxHeight="-1.0" maxWidth="-1.0" prefHeight="300.0" prefWidth="600.0" VBox.vgrow="ALWAYS">
       <children>
-
-        <Label alignment="CENTER"  layoutX="71.0" layoutY="85.0" prefHeight="168.0" prefWidth="498.0" style="&#10;"  text="Bienvenue sur notre gestion des éléves de Génie Physiologique, Biotechnologique et Informatique " textFill="#6fa7b9" wrapText="true">
+        <Label alignment="CENTER"  layoutX="71.0" layoutY="85.0" prefHeight="168.0" prefWidth="498.0" style="&#10;" text="Bienvenue sur notre gestion des éléves de Génie Physiologique, Biotechnologique et Informatique " textFill="#6fa7b9" wrapText="true">
           <font>
-            <Font size="18.0" />
+            <Font size="23.0" />
           </font>
         </Label>
             <ImageView fitHeight="135.0" fitWidth="118.0" layoutX="508.0" layoutY="240.0" pickOnBounds="true" preserveRatio="true">
@@ -103,4 +86,5 @@
       </children>
     </AnchorPane>
   </children>
+
 </VBox>
