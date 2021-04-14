@@ -4,20 +4,16 @@ import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
-import javafx.scene.control.Menu;
-import javafx.scene.control.MenuBar;
-import javafx.scene.control.MenuItem;
-import javafx.scene.layout.VBox;
+
 import javafx.stage.Stage;
 
 import javax.swing.*;
 
 
 public class Main extends Application {
-    private JLabel label;
 
     @Override
-    public void start(Stage primaryStage) throws Exception{
+    public  void start(Stage primaryStage) throws Exception{
         Parent Acceuil = FXMLLoader.load(getClass().getResource("Test.fxml"));
         Parent Ajout = FXMLLoader.load(getClass().getResource("ajout.fxml"));
         Parent Affichage = FXMLLoader.load(getClass().getResource("Affichage.fxml"));
@@ -28,7 +24,7 @@ public class Main extends Application {
         //primaryStage.setScene(new Scene(Affichage, 300, 275));
 
         primaryStage.show();
-
+        
     }
 
 
